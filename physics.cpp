@@ -1,8 +1,11 @@
-//This class will class will containg the physics calculatioa of the project
-//
-#include <iostream>
-int main()
-{
-	std::cout <<"Hello World!";
+#include "Physics.h"
+#include "Constants.h"
+#include <cmath>
+Vector3 Physics::computeGravity(const Vector3 &position){
+	double r  = position.magnitude(); 
+	double dist = r * r * r;
+	double factor = -Constants::GM/dist; 
+	return position.multiply(factor); 
+
 
 }
