@@ -44,7 +44,7 @@ Force Models:
 - Full N-body dynamics
 
 ## Build & Run 
-compile with g++
+compile with
 g++ main.cpp Vector3.cpp Physics.cpp -o kepler
 ./kelpler
 
