@@ -80,16 +80,28 @@ python orbit.py
 ## Project Structure:
 
 KeplerPlusPlus/
+
 │
 ├── Vector3.h / Vector3.cpp
+
 ├── Physics.h / Physics.cpp
+
 ├── Constants.h
+
 ├── Satellite.h / Satellite.cpp
+
 ├── Propagator.h / Propagator.cpp
+
 ├── Simulation.h / Simulation.cpp
+
 ├── Force.h / Force.cpp
+
 ├── State.h
+
 ├── main.cpp
+
 │
 ├── orbit.csv
+
 └── orbit.py
+
