@@ -32,8 +32,8 @@ Constants: compile-time physical constants:
 Satellite: Encapsulates the satellite’s dynamic state:
 - Position vector
 - Velocity vector
+- Optional add later metadata (name, mass, etc.)
 
-Optional metadata (name, mass, etc.)
 Propagator: Runs the numerical integration:
 - Applies physics models
 - Performs Euler integration (RK4 planned)
