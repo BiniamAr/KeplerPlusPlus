@@ -5,4 +5,5 @@
 
 class Force {
 	//include constructor and methods 
-}
+};
+#endif
