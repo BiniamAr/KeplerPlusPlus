@@ -3,7 +3,11 @@
 #ifndef FORCE_H
 #define FORCE_H
 
-class Force {
-	//include constructor and methods 
+class Force 
+{
+
+	//consturct will go here 
+	//
+	//
 };
 #endif
