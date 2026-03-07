@@ -6,8 +6,19 @@
 class Force 
 {
 
-	//consturct will go here 
-	//
-	//
+	/*
+	 * constructor will go here
+	 */
+
+	
+
+	/* first force function will go here */
+
+
+
+	/*-----------------------------------------------------------------------*/
+
+
+	//more functions as needed 
 };
 #endif
