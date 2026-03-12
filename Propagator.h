@@ -5,9 +5,16 @@
 #ifndef PROPAGATOR_H
 #define PROPAGATOR_H
 #include "Satellite.h"
+#include "Vector3.h"
 class Propagator {
 	public:
 		static Satellite computeEuler(const Satellite &sat, double dt);
-
+		static Satellite computeRK4(const Satellite &sat, double dt); 
+	private:
+		struct Deriv {
+			Vector3 dr; //derivative of position
+			Vector3 dv; //derivative of velocity
+		}; 
+		static Deriv derivatives(const Satellite &sat);
 };
 #endif 
