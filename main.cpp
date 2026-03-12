@@ -14,7 +14,7 @@ int main()
 	Vector3 pos(orbital_r, 0.0, 0.0), vel(0.0, orbit_v, 0);
 	Satellite sat(vel, pos); 
 	double t = 0.0; 
-	double total_t = 100000.0;
+	double total_t = 60000.0;
 	Simulation sim(sat, t, total_t); 
 	sim.run(); 
 	sim.exportHistory("orbit.csv");
