@@ -36,7 +36,8 @@ Satellite: Encapsulates the satellite’s dynamic state:
 
 Propagator: Runs the numerical integration:
 - Applies physics models
-- Performs Euler integration (RK4 planned)
+- Euler Method (baseline)
+- **Runge-Kutta 4 (RK4)** -*now implmeneted*
 - Updates satellite state each timestep
 
 Simulation: High‑level controller that:
@@ -53,7 +54,12 @@ orbit.py: Python visualization script that:
 Main: runs the program:
 - creates a position and velocity vector 
 - Runs the program and exports the csv output 
-
+## Recent Upgrade: RK4
+The propagtor now includes a full 4th order RK integrator, includes:
+- much higher accuracy than euler 
+- better energy preservation 
+- stable circular orbits
+RK4 samples the derivatives four times per timestep to approximate the next step. 
 ## Planned Modules
 These are coming next as the project grows:
 Force Models:
