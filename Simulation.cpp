@@ -11,7 +11,8 @@ void Simulation::run()
 	State initial = {t, sat.Position, sat.Velocity}; 
 	history.push_back(initial); 
 	while (t < total_t){ 
-		sat = Propagator::computeEuler(sat, Constants::DT);
+		//sat = Propagator::computeEuler(sat, Constants::DT);
+		sat = Propagator::computeRK4(sat, Constants::DT);
 		t += Constants::DT; 
 		State st = {t, sat.Position, sat.Velocity}; 
 		history.push_back(st); 
